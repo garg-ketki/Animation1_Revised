@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00000000">
+
+    <RelativeLayout
+        android:id="@+id/rl_images"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#00000000"
+        android:fillViewport="true">
+
+        <include
+            android:id="@+id/rl_background"
+            layout="@layout/layout_bg_onboarding" />
+
+        <LinearLayout
+            android:id="@+id/ll_logo_onboarding"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:transitionName="logo">
+
+            <ImageView
+                android:id="@+id/iv_logo"
+                android:layout_width="151dp"
+                android:layout_height="30dp"
+                android:src="@drawable/nb_logo" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="200dp"
+                android:layout_marginTop="25dp"
+                android:text="Right here. Right now"
+                android:textColor="#ffffff"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/lv_titles"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="50dp"
+            android:divider="#00000000"
+            android:dividerHeight="0dp"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp"
+            android:scrollbars="none" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/lv_titles"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp"
+            android:text="Experience amazing"
+            android:textColor="#ffffff" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
